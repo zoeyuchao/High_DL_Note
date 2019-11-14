@@ -88,4 +88,29 @@ $$q_{\pi}(s, a)=E[r_{t+1} + \gamma r_{t+2} + ...|s_t = s, a_t = a]$$
     - QR-DQN
     - IQN
   - value-based 和policy-based
-  - policy optimization
+  - policy optimization【从这里开始重新学习一下】
+    - MC policy gradient
+    - 有一些问题：首先是无偏的，但是large variance
+    - reward-to-go
+    - expected grad-log-prob lemma
+    - baseline
+    - actor critic
+    - advantage
+
+- A3C vs A2C
+  - 3这个会有不同步的问题。个别agent可能会跑的很快
+  - 2不会有这个问题。
+- off-policy
+  - 前面讲的都是on-policy
+  - $\beta$也是一个policy
+  - importance weight
+- model-based DRL 
+  - Atari会失败
+  - 但是机器人control会成功，十几维的向量，物理规律。
+- challenges and frontiers
+  - imperfect-information games & multi-agent games
+  - 有一些paper，见课件。
+  - robustness-random seeds，看运气，多次实验看平均值。很难说哪个方法就是好的，换个环境就不一样了。
+  - 但是跟DL对比，resnet就一直挺好的。
+  - sample efficiency。需要太多样本才能学得好。Rainbow
+  - safe RL
