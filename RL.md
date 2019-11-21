@@ -12,8 +12,9 @@ $$q_{\pi}(s, a)=E[r_{t+1} + \gamma r_{t+2} + ...|s_t = s, a_t = a]$$
   - 引出bellman方程
 
 - 最优value 方程 就是加max
-  - bellman最优方程 加max
-
+  
+- bellman最优方程 加max
+  
 - planning 环境已知，RL环境未知（narrow的说法）全都是RL（广义的说法）
 
 - state-value function
@@ -55,6 +56,7 @@ $$q_{\pi}(s, a)=E[r_{t+1} + \gamma r_{t+2} + ...|s_t = s, a_t = a]$$
 - Policy iteration
 - 策略探索 exploration$\theta$-greedy
 - MC Policy iteration 
+  
   - $\theta$-greedy 有一定概率选到新的action
 - summary to RL
 - large scale RL
@@ -87,16 +89,19 @@ $$q_{\pi}(s, a)=E[r_{t+1} + \gamma r_{t+2} + ...|s_t = s, a_t = a]$$
       - 为啥好？都是直观解释，因为考虑的信息更多了。
     - QR-DQN
     - IQN
+    - fqf
+    - 
+    - D4PG
   - value-based 和policy-based
   - policy optimization【从这里开始重新学习一下】
     - MC policy gradient
     - 有一些问题：首先是无偏的，但是large variance
     - reward-to-go
     - expected grad-log-prob lemma
-    - baseline
+  - baseline
     - actor critic
     - advantage
-
+  
 - A3C vs A2C
   - 3这个会有不同步的问题。个别agent可能会跑的很快
   - 2不会有这个问题。
