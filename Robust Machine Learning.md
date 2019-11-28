@@ -24,3 +24,9 @@
     - ICML 2019出现第一个工作
 - 理论
   - Adversarial robust generalization is harder 后来被NIPS接受
+  - 后面还有几篇论文，全是2019年的。
+- open problems
+  - 为什么standard trained model是不robust？
+  - 为什么train一个robust的model很hard？
+  - adversarial training是唯一方式去train robust？
+  - 其他benefit？
